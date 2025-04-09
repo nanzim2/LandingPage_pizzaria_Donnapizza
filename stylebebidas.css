@@ -5,6 +5,7 @@
 */
 
 :root {
+    --darkverde: rgb(0,44,42);
     --verde: rgb(0,161,78);
     --vermelho: rgb(231,27,36);
     --amarelo: rgb(241,192,5);
@@ -32,7 +33,6 @@ body.dark {
     "header";
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 1rem;
 }
 
 header { /*cabeçalho*/
@@ -121,6 +121,7 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
     cursor: pointer;
   
     padding: 5px;
+    padding-right: 8px;
     position: relative;
     height: 26px;
     width: 50px;
@@ -132,7 +133,7 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    top: 2px;
+    top: 3px;
     left: 2px;
     height: 22px;
     width: 22px;

@@ -5,6 +5,7 @@
 */
 
 :root {
+    --darkverde: rgb(0,44,42);
     --verde: rgb(0,161,78);
     --vermelho: rgb(231,27,36);
     --amarelo: rgb(241,192,5);
@@ -18,20 +19,31 @@
 }
 
 body {
-    /*color: white;*/
     font-family: "Roboto", sans-serif;
+
+    /*background-image: url(img_cardapios/bg-lightcardapio.jpg);*/
+    background-repeat: repeat; /* Faz a imagem se repetir como um padrão */
+    background-size: auto; /* ou use 'cover' ou 'contain' dependendo do efeito desejado */
+    background-position: top left;
 }
 
 body.dark {
-    background-color: #292c35;
+    background-color: #555555;
+    color: white;
+    /*background-image: url(img_cardapios/bg-darkcardapio.jpg);*/
+    background-repeat: repeat; /* Faz a imagem se repetir como um padrão */
+    background-size: auto; /* ou use 'cover' ou 'contain' dependendo do efeito desejado */
+    background-position: top left;
 }
 
 #container { /*ajuste de todo a disposição do conteudo no copor*/
     display: grid;
     grid-template-areas: 
-    "header";
+    "header"
+    "article"
+    "main";
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 2.8fr auto;
 }
 
 header { /*cabeçalho*/
@@ -120,6 +132,7 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
     cursor: pointer;
   
     padding: 5px;
+    padding-right: 8px;
     position: relative;
     height: 26px;
     width: 50px;
@@ -131,7 +144,7 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    top: 2px;
+    top: 3px;
     left: 2px;
     height: 22px;
     width: 22px;
@@ -152,12 +165,68 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
 }
 
 article {
-    background-color: rgb(172, 53, 53);
-    font-size: larger;
-    font-size: 150%;
+    background-image: url(img_cardapios/pizzabanner.jpg);
+    background-repeat: repeat; /* Faz a imagem se repetir como um padrão */
+    background-size: auto; /*contain'*/
+    background-position: top left;
+
+    color: white;
+    grid-area: article;
+    /*background-color: rgb(172, 53, 53);*/
+    font-size: 200%;
     font-weight: 800;
-    padding: 6vh;
     display: flex;
     flex-wrap: wrap;
-    place-content: center;
+    justify-content: center;
 }
+
+article h1{
+    margin-top: 2vh;
+}
+
+
+main {
+    grid-area: main;
+    color: var(--darkverde);
+}
+
+main .caixatipo {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+main .caixatipo .tipo h1 {
+    justify-self: center;
+    font-size: 180%;
+    font-weight: 370;
+
+    background-color: var(--verde);
+    padding: 1rem;
+    border-radius: 45px;
+}
+
+main .caixatipo .quantidade {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+main .caixatipo .quantidade h2 {
+    color: black;
+    font-size: 110%;
+    font-weight: 300;
+}
+
+main #contentpizza {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+    main #pizzastradicionais {
+      grid-template-columns: 1fr; /* Para telas pequenas, apenas 1 coluna */
+    }
+  }
