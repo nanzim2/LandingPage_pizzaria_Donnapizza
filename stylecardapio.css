@@ -32,7 +32,6 @@ body.dark {
     "header";
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 1rem;
 }
 
 header { /*cabeçalho*/
@@ -150,4 +149,15 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
   
 .DL .fa-sun { /*fechamento Acessibilidade modo D e L*/
     color: #f39c12;
+}
+
+article {
+    background-color: rgb(172, 53, 53);
+    font-size: larger;
+    font-size: 150%;
+    font-weight: 800;
+    padding: 6vh;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
 }
