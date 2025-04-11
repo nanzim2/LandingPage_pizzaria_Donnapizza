@@ -183,6 +183,7 @@ article {
 
 article h1{
     margin-top: 2vh;
+    place-content: center;
 }
 
 
@@ -198,6 +199,13 @@ main .caixatipo {
     gap: 2rem;
     margin-top: 3rem;
 }
+
+main .caixatipo .tipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 main .caixatipo .tipo h1 {
     justify-self: center;
@@ -216,7 +224,6 @@ main .caixatipo .quantidade {
 }
 
 main .caixatipo .quantidade h2 {
-    color: black;
     font-size: 110%;
     font-weight: 300;
 }
@@ -224,6 +231,11 @@ main .caixatipo .quantidade h2 {
 main #contentpizza {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+main #contentpizza #caixapizza .caixatexto h4 {
+    font-size: larger;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
