@@ -37,7 +37,7 @@ body.dark {
 
 header { /*cabeçalho*/
     grid-area: header;
-    background-color: var(--verde);
+    background-color: var(--darkverde);
 
     display: grid;
     grid-template-columns: 1fr auto 1fr;
