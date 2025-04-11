@@ -31,7 +31,7 @@ body.dark {
     display: grid;
     grid-template-areas: 
     "header";
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr ;
     grid-template-rows: auto;
 }
 
@@ -119,13 +119,11 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
     background-color: #111;
     border-radius: 50px;
     cursor: pointer;
-  
     padding: 5px;
     padding-right: 8px;
     position: relative;
     height: 26px;
     width: 50px;
-  
     transform: scale(1.5);
 }
   
@@ -139,6 +137,7 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
     width: 22px;
     transform: translateX(0px);
     transition: transform 0.2s linear;
+
 }
   
 .DL .checkbox:checked + .label .ball {
@@ -154,7 +153,7 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
 }
 
 article {
-    background-color: rgb(172, 53, 53);
+    background-color: rgb(94, 46, 46);
     font-size: larger;
     font-size: 150%;
     font-weight: 800;
@@ -162,4 +161,44 @@ article {
     display: flex;
     flex-wrap: wrap;
     place-content: center;
+}
+
+#containerbebidas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(255, 255, 255);
+    gap: 4rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+#bebidas{
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0;
+    display: flex;
+   align-items: center;
+}
+
+
+
+#bebidas :last-child {
+    border-bottom: none;
+}
+
+.caixatexto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    font-size: 1.2;
+    color: #422e2e;
+
+}
+
+.refresco{
+    width: 200px;
+    height: 200px;
 }
