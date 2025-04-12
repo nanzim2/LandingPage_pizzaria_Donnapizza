@@ -55,7 +55,7 @@ header .logo {
 }
 
 header .logo img {
-    height: 70px;
+    height: 74px;
     width: auto;
 }
 
@@ -218,4 +218,53 @@ main .citacao h2 {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bolder;
+}
+
+@media screen and (max-width: 1020px) {
+    header .menu nav {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 13px 0px 13px 0px;
+    }
+
+    header .logo {
+        margin: auto;
+    }
+
+    header .menu .pecaagora {
+        margin: 0 auto;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    header .DL {
+        margin-left: auto;
+        display: flex;
+        gap: 1rem;
+    }
+
+    #article-1 {
+        display:flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        padding: 2rem 2.5rem 2rem 2.5rem;
+    }
+
+    #article-1 .content {
+        display: flex;
+        flex-direction: row; /* imagem e h3 lado a lado */
+        align-items: center; /* alinha verticalmente */
+        justify-content: space-between; /* cria espaço entre img e h3 */
+
+        flex-wrap: nowrap;
+    }
+
+    #article-1 .content h3 {
+        font-size: 21.5px;
+    }
 }
