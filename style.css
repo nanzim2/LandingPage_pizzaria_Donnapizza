@@ -259,7 +259,7 @@ main .citacao h2 {
         display: flex;
         flex-direction: row; /* imagem e h3 lado a lado */
         align-items: center; /* alinha verticalmente */
-        justify-content: space-between; /* cria espaço entre img e h3 */
+        justify-content: space-around; /* cria espaço entre img e h3 */
 
         flex-wrap: nowrap;
     }
