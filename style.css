@@ -9,6 +9,8 @@
     --darkverde: rgb(0,44,42);
     --verde: rgb(0,161,78);
     --vermelho: rgb(231,27,36);
+    --lightvermelho: rgb(218, 51, 59);
+    --darkvermelho: rgb(138, 26, 32);
     --amarelo: rgb(241,192,5);
 }
 
@@ -33,9 +35,8 @@ body.dark {
     grid-template-areas: 
     "header"
     "main"
-    "article1";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    "article1"
+    "article2";
 }
 
 header { /*cabeçalho*/
@@ -122,12 +123,16 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
     background-color: #111;
     border-radius: 50px;
     cursor: pointer;
-  
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     padding: 5px;
-    padding-right: 8px;
     position: relative;
     height: 26px;
     width: 50px;
+    transform: scale(1.5);
   
     transform: scale(1.5);
 }
@@ -136,7 +141,7 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    top: 3px;
+    top: 2px;
     left: 2px;
     height: 22px;
     width: 22px;
@@ -152,9 +157,9 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
     color: #f1c40f;
 }
   
-.DL .fa-sun { /*fechamento Acessibilidade modo D e L*/
+.DL .fa-sun {
     color: #f39c12;
-}
+} /*fim Acessibilidade modo D e L*/
 
 main {
     grid-area: main;
@@ -220,6 +225,71 @@ main .citacao h2 {
     font-weight: bolder;
 }
 
+#article-2 {
+    grid-area: article2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+#article-2 .titulo {
+    color: var(--darkverde);
+}
+
+#article-2 .titulo h2 {
+    font-size: 42px;
+    font-weight: bolder;
+    margin-bottom: 0.7rem;
+}
+
+#article-2 .titulo p {
+    font-size: 14px;
+}
+
+#article-2 .caixa-reco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto 3rem auto 3rem;
+}
+
+#article-2 .caixa-reco .caixa-suges {
+    flex: 1; /* Cada item vai crescer igualmente e ocupar o espaço disponível */
+    color: var(--darkverde);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto 2rem auto 2rem;
+}
+
+#article-2 .caixa-reco .caixa-suges h4 {
+    font-size: 19px;
+}
+
+#article-2 .caixa-reco .caixa-suges p {
+    font-size: smaller;
+}
+
+#article-2 .caixa-reco .caixa-suges a {
+    color: white;
+    font-size: 13.5px;
+    font-weight: 470;
+    background-color: var(--lightvermelho);
+    margin: 0.5rem 5.5rem auto 5.5rem;
+    padding: 0.8rem;
+    border-radius: 20px;
+}
+
+#article-2 .caixa-reco .caixa-suges a:hover {
+    background-color: var(--darkvermelho);
+    transition: 0.2s;
+}
+
 @media screen and (max-width: 1020px) {
     header .menu nav {
         display: none;
@@ -267,4 +337,21 @@ main .citacao h2 {
     #article-1 .content h3 {
         font-size: 21.5px;
     }
+
+    #article-2 .titulo h2 {
+        line-height: 1;
+    }
+
+    #article-2 .caixa-reco {
+        gap: 1.5rem; /*gap colunas mobile*/
+    }
+
+    #article-2 .caixa-reco {
+        margin: auto 1.5rem auto 1.5rem;
+    }
+    
+    #article-2 .caixa-reco .caixa-suges {
+        margin: auto;
+    }
+    
 }
