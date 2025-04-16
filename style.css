@@ -275,21 +275,6 @@ main .citacao h2 {
     font-size: smaller;
 }
 
-#article-2 .caixa-reco .caixa-suges a {
-    color: white;
-    font-size: 13.5px;
-    font-weight: 470;
-    background-color: var(--lightvermelho);
-    margin: 0.5rem 5.5rem auto 5.5rem;
-    padding: 0.8rem;
-    border-radius: 20px;
-}
-
-#article-2 .caixa-reco .caixa-suges a:hover {
-    background-color: var(--darkvermelho);
-    transition: 0.2s;
-}
-
 @media screen and (max-width: 1020px) {
     header .menu nav {
         display: none;
