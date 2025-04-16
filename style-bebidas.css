@@ -169,13 +169,15 @@ article {
 
 main{
     grid-area: main;
+    display: flex;
+    justify-content: center;
+   
 }
 
 #containerbebidas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    
     background-color: white;
     gap: 4rem;
     max-width: 1300px;  
@@ -210,4 +212,22 @@ main{
 .refresco{
     width: 200px;
     height: 200px;
+}
+
+@media screen and (max-width: 1020px) {
+    header .menu nav{
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between; /* Distribui os itens igualmente, com espaço entre eles */
+        align-items: center; /* Alinha verticalmente os itens no centro */
+        background-color: var(--darkverde);
+        padding: 10px 20px;
+      }
+      
+      header .logo {
+        flex: 1; /* Faz a logo ocupar o espaço disponível, mas não exagerar */
+      }
 }
