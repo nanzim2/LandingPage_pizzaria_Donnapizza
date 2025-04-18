@@ -1,5 +1,5 @@
-const chk = document.getElementById('chk')
+const modo = document.getElementById('botao-tema')
 
-chk.addEventListener('change', () => {
+modo.addEventListener('change', () => {
   document.body.classList.toggle('dark')
 })

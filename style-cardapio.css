@@ -200,10 +200,29 @@ main .caixatipo {
     margin-top: 3rem;
 }
 
+main .caixatipo-bordas {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}
+
 main .caixatipo .tipo {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+main .caixatipo-bordas .tipobordas h1 {
+    justify-self: center;
+    font-size: 180%;
+    font-weight: 370;
+
+    background-color: var(--verde);
+    padding: 1rem;
+    border-radius: 45px;
 }
 
 
@@ -231,6 +250,9 @@ main .caixatipo .quantidade h2 {
 main #contentpizza {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 main #contentpizza #caixapizza .caixatexto h4 {
