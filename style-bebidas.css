@@ -19,7 +19,7 @@
 }
 
 body {
-    /*color: white;*/
+    color: white;
     background-color: #ededed;
     font-family: "Roboto", sans-serif;
 }
@@ -157,11 +157,13 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
 
 article {
     grid-area: article;
-    background-color: rgb(94, 46, 46);
+    background-image: linear-gradient( rgba(0, 44, 42, 0.5)), url(img_cardapios/bg-lightcardapio.jpg);
+    background-repeat: repeat; /* Faz a imagem se repetir como um padrão */
+    background-size: cover; /*contain'*/
     font-size: larger;
     font-size: 150%;
     font-weight: 800;
-    padding: 6vh;
+    padding: 8vh;
     display: flex;
     flex-wrap: wrap;
     place-content: center;
@@ -171,7 +173,6 @@ main{
     grid-area: main;
     display: flex;
     justify-content: center;
-   
 }
 
 #containerbebidas {
@@ -215,19 +216,33 @@ main{
 }
 
 @media screen and (max-width: 1020px) {
-    header .menu nav{
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 14px 0px 14px 0px;
+    }
+
+    article {
+        max-width: 1020px;
+    }
+
+    header .logo {
+        margin: 0;
+    }
+
+    header .menu nav {
         display: none;
     }
 
-    header {
-        display: flex;
-        justify-content: space-between; /* Distribui os itens igualmente, com espaço entre eles */
-        align-items: center; /* Alinha verticalmente os itens no centro */
-        background-color: var(--darkverde);
-        padding: 10px 20px;
-      }
-      
-      header .logo {
-        flex: 1; /* Faz a logo ocupar o espaço disponível, mas não exagerar */
-      }
+    header .DL {
+        display: none;
+    }
+
+    #containerbebidas {
+        display: grid;
+        grid-template-columns: auto;
+        max-width: 90vw;
+        justify-content: center;
+    }
 }

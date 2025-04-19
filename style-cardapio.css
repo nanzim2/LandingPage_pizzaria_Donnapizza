@@ -60,7 +60,7 @@ header { /*cabeçalho*/
 
 header .logo {
     justify-self: start;
-    margin-left: 10vh;
+    margin-left: 10vw;
 }
 
 header .logo img {
@@ -96,8 +96,8 @@ header .menu nav a{
 header .menu nav a:hover{
     color: var(--vermelho);
     border-bottom: 0.1rem solid var(--vermelho);
-  padding-bottom: 0.1rem;
-  transition: 0.3s linear;
+    padding-bottom: 0.1rem;
+    transition: 0.3s linear;
 }
 
 header .menu .pecaagora { /*peça agora*/
@@ -166,7 +166,7 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
 }
 
 article {
-    background-image: url(img_cardapios/pizzabanner.jpg);
+    background-image: linear-gradient( rgba(0, 44, 42, 0.5), rgba(0, 44, 42, 0)), url(img_cardapios/pizzabanner.jpg);
     background-repeat: repeat; /* Faz a imagem se repetir como um padrão */
     background-size: auto; /*contain'*/
     background-position: top left;
@@ -238,7 +238,8 @@ main .caixatipo .tipo h1 {
 
 main .caixatipo .quantidade {
     display: flex;
-    flex-direction: row;
+    max-width: 100vw;
+    justify-content: center;
     gap: 4rem;
 }
 
@@ -260,8 +261,35 @@ main #contentpizza #caixapizza .caixatexto h4 {
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
-    main #pizzastradicionais {
-      grid-template-columns: 1fr; /* Para telas pequenas, apenas 1 coluna */
+@media screen and (max-width: 1020px) {
+    header .menu nav {
+        display: none;
     }
-  }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 14px 0px 14px 0px;
+    }
+
+    header .logo {
+        margin: 0;
+    }
+
+    header .DL {
+        display: none;
+    }
+
+    main .caixatipo .quantidade {
+        margin-left: 1.5rem;
+        gap: 1rem;
+    }
+
+    main #contentpizza {
+        display: grid;
+        grid-template-columns: 90vw;
+        justify-content: center;
+        column-gap: 2rem;
+    }
+}
