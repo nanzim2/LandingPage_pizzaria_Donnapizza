@@ -92,6 +92,25 @@ header .menu nav a:hover{
   transition: 0.3s linear;
 }
 
+.nav {
+    display: flex;
+    gap: 1.5rem;
+}
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+}
+  
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
 header .menu .pecaagora { /*peça agora*/
     background-color: var(--vermelho);
     padding: 10px;
@@ -292,6 +311,25 @@ main .citacao h2 {
         gap: 1rem;
         padding: 13px 0px 13px 0px;
     }
+
+    .nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #004d40;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+      }
+    
+      .nav.active {
+        display: flex;
+      }
+    
+      .hamburger {
+        display: block;
+      }
 
     header .logo {
         margin: auto;
