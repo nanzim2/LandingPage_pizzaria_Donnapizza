@@ -243,6 +243,7 @@ body.dark #containerbebidas {
 .refresco{
     width: 200px;
     height: 200px;
+    border-radius: 20%;
 }
 
 @media screen and (max-width: 1020px) {

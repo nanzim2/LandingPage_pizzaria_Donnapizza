@@ -217,6 +217,7 @@ main {
     grid-area: main;
     color: var(--darkverde);
     background-color: var(--branco-sutil);
+   
 }
 
 body.dark main {
@@ -296,6 +297,7 @@ main #contentpizza {
     column-gap: 2rem;
     margin-bottom: 2.5rem;
     max-width: 90vw;
+    
     margin-left: 2vw;
 }
 
@@ -303,6 +305,15 @@ main #contentpizza #caixapizza .caixatexto h4 {
     font-size: larger;
     font-weight: bold;
 }
+
+.imgpizza {
+        width: 50%;
+        height: 50%%;
+        border-radius: 10px;
+    }
+
+
+
 
 @media screen and (max-width: 1020px) {
     header .menu nav {
