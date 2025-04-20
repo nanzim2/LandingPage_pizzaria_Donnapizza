@@ -12,6 +12,13 @@
     --lightvermelho: rgb(218, 51, 59);
     --darkvermelho: rgb(138, 26, 32);
     --amarelo: rgb(241,192,5);
+
+    --fundo: #0D0D0D;
+    --fundo-secundario: #1A1A1A;
+    --branco-sutil: #E5E5E5;
+    --cinza-claro: #AAAAAA;
+    --mostarda: #F1A208;
+    --fundo-terciario: #2A2A2A;
 }
 
 * {
@@ -24,10 +31,11 @@
 body {
     /*color: white;*/
     font-family: "Roboto", sans-serif;
+    background-color: var(--branco-sutil);
 }
 
 body.dark {
-    background-color: #292c35;
+    background-color: var(--cinza-claro);
 }
 
 #container { /*ajuste de todo a disposição do conteudo no copor*/

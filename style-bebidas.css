@@ -9,6 +9,13 @@
     --verde: rgb(0,161,78);
     --vermelho: rgb(231,27,36);
     --amarelo: rgb(241,192,5);
+
+    --fundo: #0D0D0D;
+    --fundo-secundario: #1A1A1A;
+    --branco-sutil: #E5E5E5;
+    --cinza-claro: #AAAAAA;
+    --mostarda: #F1A208;
+    --fundo-terciario: #2A2A2A;
 }
 
 * {
@@ -25,7 +32,8 @@ body {
 }
 
 body.dark {
-    background-color: #292c35;
+    /*background-color: #292c35;*/
+    background-color: var(--fundo-terciario);
 }
 
 #container { /*ajuste de todo a disposição do conteudo no copor*/
@@ -200,10 +208,14 @@ main{
     
     background-color: white;
     gap: 4rem;
-    max-width: 1300px;  
+    max-width: 90vw;  
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     padding: 20px;
+}
+
+body.dark #containerbebidas {
+    background-color: var(--cinza-claro);
 }
 
 #bebidas{
@@ -212,7 +224,6 @@ main{
     display: flex;
    align-items: center;
 }
-
 
 
 #bebidas :last-child {

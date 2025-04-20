@@ -10,6 +10,13 @@
     --verde: rgb(0,161,78);
     --vermelho: rgb(231,27,36);
     --amarelo: rgb(241,192,5);
+
+    --fundo: #0D0D0D;
+    --fundo-secundario: #1A1A1A;
+    --branco-sutil: #E5E5E5;
+    --cinza-claro: #AAAAAA;
+    --mostarda: #F1A208;
+    --fundo-terciario: #2A2A2A;
 }
 
 * {
@@ -209,6 +216,24 @@ article h1{
 main {
     grid-area: main;
     color: var(--darkverde);
+    background-color: var(--branco-sutil);
+}
+
+body.dark main {
+    background-color: var(--fundo-terciario);
+}
+
+main .caixa-cardapio {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 3vw;
+    max-width: 94vw;
+    border-radius: 10px;
+    background-color: white;
+}
+
+body.dark .caixa-cardapio {
+    background-color: var(--cinza-claro);
 }
 
 main .caixatipo {
@@ -216,7 +241,6 @@ main .caixatipo {
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     gap: 2rem;
-    margin-top: 3rem;
 }
 
 main .caixatipo-bordas {
@@ -257,7 +281,6 @@ main .caixatipo .tipo h1 {
 
 main .caixatipo .quantidade {
     display: flex;
-    max-width: 100vw;
     justify-content: center;
     gap: 4rem;
 }
@@ -271,8 +294,9 @@ main #contentpizza {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-bottom: 2.5rem;
+    max-width: 90vw;
+    margin-left: 2vw;
 }
 
 main #contentpizza #caixapizza .caixatexto h4 {
