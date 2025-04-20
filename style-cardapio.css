@@ -57,7 +57,7 @@ header { /*cabeçalho*/
 
 header .logo {
     justify-self: start;
-    margin-left: 5vw;
+    margin-left: 10vw;
 }
 
 header .logo img {
@@ -156,8 +156,6 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
     position: relative;
     height: 26px;
     width: 50px;
-    transform: scale(1.5);
-  
     transform: scale(1.5);
 }
   
@@ -317,10 +315,21 @@ main #contentpizza #caixapizza .caixatexto h4 {
 
     header {
         display: flex;
+        width: 100vw;
         align-items: center;
-        justify-content: space-around;
-        padding: 14px 0px 14px 0px;
+        gap: 1rem;
+        padding: 13px 0px 13px 0px;
     }
+
+    header .logo {
+        padding-left: 5vw;
+        padding-right: 0.8rem;
+    }
+
+    header .DL {
+        margin-left: 1rem;
+    }
+
     .nav {
         position: absolute;
         top: 70px;
