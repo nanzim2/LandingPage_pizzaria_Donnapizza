@@ -29,7 +29,7 @@
 }
 
 body {
-    /*color: white;*/
+    color: white;
     font-family: "Roboto", sans-serif;
     background-color: var(--branco-sutil);
 }
@@ -75,6 +75,25 @@ header .logo img:hover {
     cursor: pointer;
 }
 
+.nav {
+    display: flex;
+    gap: 1.5rem;
+}
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+}
+  
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
 header .menu { /*menu - peca agora*/
     display: flex;
     flex-wrap: wrap;
@@ -99,25 +118,6 @@ header .menu nav a:hover{
     border-bottom: 0.1rem solid var(--vermelho);
   padding-bottom: 0.1rem;
   transition: 0.3s linear;
-}
-
-.nav {
-    display: flex;
-    gap: 1.5rem;
-}
-  
-  .nav a {
-    color: white;
-    text-decoration: none;
-}
-  
-  .hamburger {
-    display: none;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
 }
 
 header .menu .pecaagora { /*peça agora*/
@@ -312,7 +312,6 @@ main .citacao h2 {
 #article-3 {
     grid-area: article3;
     background-color: var(--darkverde);
-    color: white;
     display: flex;
     flex-wrap: wrap;
     max-width: 100vw;
@@ -407,7 +406,8 @@ main .citacao h2 {
     
       .nav.active {
         display: flex;
-        padding: 1rem 0rem 1rem 0rem;
+        gap: 2rem;
+        padding: 2rem 0rem 2rem 0rem;
       }
     
       .hamburger {

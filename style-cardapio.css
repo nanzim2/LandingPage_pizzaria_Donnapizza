@@ -28,20 +28,11 @@
 
 body {
     font-family: "Roboto", sans-serif;
-
-    /*background-image: url(img_cardapios/bg-lightcardapio.jpg);*/
-    background-repeat: repeat; /* Faz a imagem se repetir como um padrão */
-    background-size: auto; /* ou use 'cover' ou 'contain' dependendo do efeito desejado */
-    background-position: top left;
 }
 
 body.dark {
     background-color: #555555;
     color: white;
-    /*background-image: url(img_cardapios/bg-darkcardapio.jpg);*/
-    background-repeat: repeat; /* Faz a imagem se repetir como um padrão */
-    background-size: auto; /* ou use 'cover' ou 'contain' dependendo do efeito desejado */
-    background-position: top left;
 }
 
 #container { /*ajuste de todo a disposição do conteudo no copor*/
@@ -50,8 +41,8 @@ body.dark {
     "header"
     "article"
     "main";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2.8fr auto;
+    grid-template-columns: auto;
+    
 }
 
 header { /*cabeçalho*/
@@ -61,8 +52,23 @@ header { /*cabeçalho*/
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: 13vh;
-
     align-items: center;
+}
+
+header .logo {
+    justify-self: start;
+    margin-left: 5vw;
+}
+
+header .logo img {
+    height: 74px;
+    width: auto;
+}
+
+header .logo img:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 .nav {
@@ -81,22 +87,6 @@ header { /*cabeçalho*/
     background: none;
     border: none;
     color: white;
-    cursor: pointer;
-}
-
-header .logo {
-    justify-self: start;
-    margin-left: 10vw;
-}
-
-header .logo img {
-    height: 70px;
-    width: auto;
-}
-
-header .logo img:hover {
-    transform: scale(1.1);
-    transition: 0.2s;
     cursor: pointer;
 }
 
@@ -145,7 +135,7 @@ header .menu .pecaagora:hover {
 
 header .DL { /*Inicio Acessibilidade modo D e L*/
     justify-self: end;
-    margin-right: 5vh;
+    margin-right: 5vw;
 }
 
 .DL .checkbox {
@@ -157,12 +147,16 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
     background-color: #111;
     border-radius: 50px;
     cursor: pointer;
-  
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     padding: 5px;
-    padding-right: 8px;
     position: relative;
     height: 26px;
     width: 50px;
+    transform: scale(1.5);
   
     transform: scale(1.5);
 }
@@ -171,7 +165,7 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    top: 3px;
+    top: 2px;
     left: 2px;
     height: 22px;
     width: 22px;
@@ -192,7 +186,7 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
 }
 
 article {
-    background-image: linear-gradient( rgba(0, 44, 42, 0.5), rgba(0, 44, 42, 0)), url(img_cardapios/pizzabanner.jpg);
+    background-image: linear-gradient( rgba(0, 44, 42, 0.35) ), url(img_cardapios/pizzabanner.jpg);
     background-repeat: repeat; /* Faz a imagem se repetir como um padrão */
     background-size: auto; /*contain'*/
     background-position: top left;
@@ -202,6 +196,7 @@ article {
     /*background-color: rgb(172, 53, 53);*/
     font-size: 200%;
     font-weight: 800;
+    padding: 11vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -225,7 +220,7 @@ body.dark main {
 }
 
 main .caixa-cardapio {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     padding-bottom: 2rem;
     margin-left: 3vw;
     max-width: 94vw;
@@ -308,7 +303,7 @@ main #contentpizza #caixapizza .caixatexto h4 {
 
 .imgpizza {
         width: 50%;
-        height: 50%%;
+        height: 50%;
         border-radius: 10px;
     }
 
@@ -339,6 +334,8 @@ main #contentpizza #caixapizza .caixatexto h4 {
     
     .nav.active {
         display: flex;
+        gap: 2rem;
+        padding: 2rem 0rem 2rem 0rem;
     }
     
     .hamburger {
@@ -347,10 +344,6 @@ main #contentpizza #caixapizza .caixatexto h4 {
 
     header .logo {
         margin: 0;
-    }
-
-    header .DL {
-        display: none;
     }
 
     main .caixatipo .quantidade {
