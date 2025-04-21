@@ -376,10 +376,17 @@ main .citacao h2 {
     max-width: 100vw;
 }
 
-#article-4 .mapa{
+#article-4 .mapa {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 90vw;
-    justify-content: center;
+}
+
+#article-4 .mapa h2{
+    color: #111;
+    font-size: 2rem;
+    margin: 1.3rem 0;
 }
 
 @media screen and (max-width: 1020px) {
