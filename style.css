@@ -376,14 +376,14 @@ main .citacao h2 {
     max-width: 100vw;
 }
 
-#article-4 .mapa {
+#article-4 .caixa-mapa {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 90vw;
+    width: auto;
 }
 
-#article-4 .mapa h2{
+#article-4 .caixa-mapa h2{
     color: #111;
     font-size: 2rem;
     margin: 1.3rem 0;
@@ -498,6 +498,6 @@ main .citacao h2 {
     }
     
     #article-3 #contato-direita img {
-        width: 100%;
+        max-width: 100%;
     }
 }
