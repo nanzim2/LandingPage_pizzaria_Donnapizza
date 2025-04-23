@@ -251,7 +251,7 @@ body.dark #containerbebidas {
     border-radius: 20%;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 768px) {
     header .menu nav {
         display: none;
     }

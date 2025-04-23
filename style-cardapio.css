@@ -309,7 +309,7 @@ main #contentpizza #caixapizza .caixatexto h4 {
 
 
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 768px) {
     header .menu nav {
         display: none;
     }
