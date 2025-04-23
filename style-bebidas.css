@@ -32,8 +32,7 @@ body {
 }
 
 body.dark {
-    /*background-color: #292c35;*/
-    background-color: rgb(6, 6, 6);
+    background-color: var(--fundo-terciario);
     color: var(--darkverde);
 }
 
@@ -226,7 +225,7 @@ main{
 }
 
 body.dark #containerbebidas {
-    background-color:rgb(0, 0, 0);
+    background-color: var(--cinza-claro);
 }
 
 #bebidas{

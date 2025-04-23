@@ -36,7 +36,7 @@ body {
 }
 
 body.dark {
-    background-color:black;
+    background-color: var(--fundo-terciario);
 }
 
 #container { /*ajuste de todo a disposição do conteudo no copor*/
@@ -265,10 +265,11 @@ main .citacao h2 {
     text-align: center;
     margin-top: 2.5rem;
     margin-bottom: 3rem;
+    color: var(--darkverde);
 }
 
-#article-2 .titulo {
-    color: var(--darkverde);
+body.dark #article-2 {
+    color: var(--branco-sutil);
 }
 
 #article-2 .titulo h2 {
@@ -291,7 +292,6 @@ main .citacao h2 {
 
 #article-2 .caixa-reco .caixa-suges {
     flex: 1; /* Cada item vai crescer igualmente e ocupar o espaço disponível */
-    color: var(--darkverde);
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -338,6 +338,10 @@ main .citacao h2 {
     flex-wrap: wrap;
     width: 99.2vw;
     height: 27rem;
+}
+
+body.dark #article-3 {
+    color: var(--branco-sutil);
 }
 
 #article-3 #contato-esquerda {
@@ -405,19 +409,24 @@ main .citacao h2 {
     align-items: center;
     flex-direction: column;
     width: auto;
+    padding: 1.5rem;
+    border-radius: 30px;
+    background-color: var(--cinza-claro);
+}
+
+body.dark #article-4 .caixa-mapa {
+    background-color: var(--darkverde);
 }
 
 #article-4 .caixa-mapa h2{
-    color: #111;
+    color: rgb(17, 76, 46);
     font-size: 35px;
-    font-weight: bolder;
-    margin-bottom: 1.3rem;
+    letter-spacing: 0.8px;
+    margin-bottom: 1.5rem;
 }
 
-#article-4 .caixa-mapa .mapa {
-    background-color: #004d40;
-    padding: 0.8rem;
-    border-radius: 30px;
+body.dark #article-4 .caixa-mapa h2 {
+    color: var(--verde);
 }
 
 #article-4 .caixa-mapa .mapa iframe{

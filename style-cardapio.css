@@ -213,7 +213,7 @@ body.dark article h1 {
 main {
     grid-area: main;
     color: var(--darkverde);
-    background-color: var(--branco-sutil);
+    background-color: var(--cinza-claro);
 }
 
 body.dark main {
@@ -226,11 +226,11 @@ main .caixa-cardapio {
     margin-left: 3vw;
     max-width: 94vw;
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--branco-sutil);
 }
 
-body.dark .caixa-cardapio {
-    background-color: black;
+body.dark main .caixa-cardapio {
+    background-color: var(--cinza-claro);
 }
 
 main .caixatipo {
