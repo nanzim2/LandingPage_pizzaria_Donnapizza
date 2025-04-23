@@ -32,7 +32,7 @@ body {
     color: white;
     font-family: "Roboto", sans-serif;
     background-color: var(--branco-sutil);
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 
 body.dark {
@@ -99,7 +99,7 @@ header .menu { /*menu - peca agora*/
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem; /*distancia menus - pecaagora*/
+    gap: 1rem; /*distancia menus - pecaagora*/
 }
 
 header .menu nav { /*MENUS*/
@@ -394,7 +394,7 @@ main .citacao h2 {
 
 #article-4 {
     grid-area: article4;
-    margin: 1rem auto 1rem auto;
+    margin: 2rem auto 1.5rem auto;
     max-width: 100vw;
 }
 
@@ -412,16 +412,27 @@ main .citacao h2 {
     margin-bottom: 1.3rem;
 }
 
+#article-4 .caixa-mapa .mapa {
+    background-color: #004d40;
+    padding: 0.8rem;
+    border-radius: 30px;
+}
+
+#article-4 .caixa-mapa .mapa iframe{
+    width: 70vw;
+    height: 60vh;
+    border-radius: 15px;
+}
+
+
+
 @media screen and (max-width: 768px) {
     header .menu nav {
         display: none;
     }
 
     header {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        padding: 13px 0px 13px 0px;
+        height: 13vh;
     }
 
     .nav {
@@ -449,14 +460,17 @@ main .citacao h2 {
         margin: auto;
     }
 
+    header .logo img {
+        height: 60px;
+    }
+
     header .menu .pecaagora {
-        margin: 0 auto;
         display: flex;
         gap: 1.5rem;
     }
 
     header .DL {
-        margin-left: auto;
+        margin-left: 1.2rem;
         display: flex;
         gap: 1rem;
     }
@@ -511,8 +525,12 @@ main .citacao h2 {
         margin-bottom: 2rem;
     }
 
+    #article-3 #contato-esquerda .topicos {
+        width: 70vw;
+    }
+
     #article-3 #contato-esquerda .titulo-contato {
-        font-size: 32px;
+        font-size: 30px;
         font-weight: bolder;
     }
 
@@ -522,5 +540,10 @@ main .citacao h2 {
     
     #article-3 #contato-direita img {
         max-width: 100%;
+    }
+
+    #article-4 .caixa-mapa .mapa iframe{
+        width: 90vw;
+        height: 60vh;
     }
 }
