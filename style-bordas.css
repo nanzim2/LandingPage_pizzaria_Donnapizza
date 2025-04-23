@@ -31,7 +31,7 @@ body {
 }
 
 body.dark {
-    background-color: #292c35;
+    background-color: #050506;
 }
 
 #container { /*ajuste de todo a disposição do conteudo no copor*/
@@ -150,10 +150,12 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
   
 .DL .checkbox:checked + .label .ball {
       transform: translateX(24px);
+      background-color: #000000;
 }
   
 .DL .fa-moon {
     color: #f1c40f;
+
 }
   
 .DL .fa-sun { /*fechamento Acessibilidade modo D e L*/
