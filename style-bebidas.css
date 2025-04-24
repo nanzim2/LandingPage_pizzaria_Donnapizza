@@ -41,7 +41,8 @@ body.dark {
     grid-template-areas: 
     "header"
     "article"
-    "main";
+    "main"
+    "footer";
     grid-template-columns: auto;
     grid-template-rows: auto;
 }
@@ -258,6 +259,31 @@ color: var(--darkverde);
     width: 200px;
     height: 200px;
     border-radius: 20%;
+}
+
+footer {
+    grid-area: footer;
+    max-width: 100vw;
+    background-color: var(--darkverde);
+}
+
+footer .rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+footer .rodape img {
+    height: auto;
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+footer .rodape p {
+    line-height: 1.5;
+    font-size: 13px;
 }
 
 @media screen and (max-width: 768px) {

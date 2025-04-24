@@ -27,6 +27,13 @@
 }
 
 body {
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  grid-column: 100vw;
+  
     font-family: "Roboto", sans-serif;
 }
 
@@ -182,14 +189,9 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
     color: #f39c12;
 } /*fim Acessibilidade modo D e L*/
 
-
-
-
-
-
-
-
-
+main {
+  grid-area: main;
+}
 .container {
     max-width: 1000px;
     margin: 40px auto;
@@ -227,24 +229,29 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
   }
   
 
+  footer {
+    grid-area: footer;
+    max-width: 100vw;
+    background-color: var(--darkverde);
+}
 
+footer .rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+}
 
+footer .rodape img {
+    height: auto;
+    width: 5rem;
+    margin-bottom: 1rem;
+}
 
-  .footer {
-    text-align: center;
-    padding: 30px 20px;
-    font-size: 0.95rem;
-    background-color: #f8f8f8;
-    color: #555;
-    margin-top: 60px;
-    border-top: 1px solid #ddd;
-  }
-  
-  body.dark .footer {
-    background-color: #1f1f1f;
-    color: #ccc;
-    border-top: 1px solid #333;
-  }
+footer .rodape p {
+    line-height: 1.5;
+    font-size: 13px;
+}
   
 
 
