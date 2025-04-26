@@ -109,12 +109,15 @@ header .menu { /*menu - peca agora*/
 header .menu nav { /*MENUS*/
     display: flex;
     gap: 1.5rem;
+    
 }
 
 header .menu nav a{
     color: white;
     font-size: large;
     font-weight: 500;
+
+    
 }
 
 header .menu nav a:hover{
