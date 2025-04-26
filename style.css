@@ -197,7 +197,7 @@ main {
     background-size: cover; /*contain'*/
     background-position: top left;
     min-height: 60vh;
-    max-width: 100vw;
+    width: 100vw;
     
 }
 
@@ -231,7 +231,7 @@ main .citacao h2 {
     grid-area: article1;
     background-color: var(--darkverde);
     min-height: 15vh;
-    max-width: 100vw;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -259,7 +259,7 @@ main .citacao h2 {
 #article-2 {
     grid-area: article2;
     display: flex;
-    max-width: 100vw;
+    width: 100vw;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -337,7 +337,7 @@ body.dark #article-2 {
     background-color: var(--darkverde);
     display: flex;
     flex-wrap: wrap;
-    width: 99.2vw;
+    width: 100vw;
     height: 27rem;
 }
 
@@ -523,7 +523,6 @@ footer .rodape p {
         flex-direction: row; /* imagem e h3 lado a lado */
         align-items: center; /* alinha verticalmente */
         justify-content: space-around; /* cria espaço entre img e h3 */
-
         flex-wrap: nowrap;
     }
 
