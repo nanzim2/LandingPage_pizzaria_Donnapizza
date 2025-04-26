@@ -76,17 +76,17 @@ header .logo img:hover {
     cursor: pointer;
 }
 
-  .nav {
+.nav {
     display: flex;
     gap: 1.5rem;
 }
   
-  .nav a {
+.nav a {
     color: white;
     text-decoration: none;
 }
   
-  .hamburger {
+.hamburger {
     display: none;
     font-size: 2rem;
     background: none;

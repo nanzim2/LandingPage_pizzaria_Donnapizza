@@ -72,14 +72,12 @@ header .logo img:hover {
   cursor: pointer;
 }
 
-header .menu .nav {
+header .menu { /*menu - peca agora*/ 
   display: flex;
-  gap: 1.5rem;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /*distancia menus - pecaagora*/
 }
 
 .hamburger {
@@ -91,26 +89,27 @@ header .menu .nav {
   cursor: pointer;
 }
 
-header .menu { /*menu - peca agora*/
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem; /*distancia menus - pecaagora*/
-}
-
-header .menu nav { /*MENUS*/
+header .menu .nav { /*MENUS*/
   display: flex;
   gap: 1.5rem;
 }
 
-header .menu nav a{
+header .menu .nav a{
   color: white;
   font-size: large;
   font-weight: 500;
 }
 
-header .menu nav a:hover{
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+header .menu .nav a:hover{
   color: var(--vermelho);
   border-bottom: 0.1rem solid var(--vermelho);
   padding-bottom: 0.1rem;
