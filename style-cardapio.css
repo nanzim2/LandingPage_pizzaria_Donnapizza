@@ -17,6 +17,8 @@
     --cinza-claro: #AAAAAA;
     --mostarda: #F1A208;
     --fundo-terciario: #2A2A2A;
+    --cinza-medio: #666666;
+    --cinza-escuro: #444444;
 }
 
 * {
@@ -218,7 +220,7 @@ main {
 }
 
 body.dark main {
-    background-color: var(--fundo-secundario);
+    background-color: var(--fundo-terciario);
 }
 
 main .caixa-cardapio {
@@ -231,7 +233,7 @@ main .caixa-cardapio {
 }
 
 body.dark main .caixa-cardapio {
-    background-color: black;
+    background-color: var(--cinza-claro);
 }
 
 main .caixatipo {
@@ -296,6 +298,10 @@ main #contentpizza {
     max-width: 90vw;
     
     margin-left: 2vw;
+}
+
+main #contentpizza #caixapizza {
+    margin-bottom: 1.5rem;
 }
 
 main #contentpizza #caixapizza .caixatexto h4 {

@@ -16,6 +16,8 @@
     --cinza-claro: #AAAAAA;
     --mostarda: #F1A208;
     --fundo-terciario: #2A2A2A;
+    --cinza-medio: #666666;
+    --cinza-escuro: #444444;
 }
 
 * {
@@ -226,7 +228,7 @@ main{
 }
 
 body.dark #containerbebidas {
-    background-color: black;
+    background-color: var(--cinza-claro);
 }
 
 #bebidas{

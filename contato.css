@@ -19,6 +19,8 @@
     --cinza-claro: #AAAAAA;
     --mostarda: #F1A208;
     --fundo-terciario: #2A2A2A;
+    --cinza-medio: #666666;
+    --cinza-escuro: #444444;
 }
 
 * {
@@ -192,6 +194,10 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
   width: 100vw;
 }
 
+body.dark .caixa-branca {
+  background-color: var(--fundo-terciario);
+}
+
 .caixa-branca .content {
   background-color: var(--branco-sutil);
   margin-top: 3rem;
@@ -201,6 +207,10 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+body.dark .caixa-branca .content {
+  background-color: var(--cinza-claro);
+}
+
 .contatos {
   text-align: center;
 }
@@ -208,6 +218,10 @@ header .DL { /*Inicio Acessibilidade modo D e L*/
 .contatos h2 {
   margin-bottom: 10px;
   font-size: 16px;
+  color: #333;
+}
+
+.caixa-branca {
   color: #333;
 }
 

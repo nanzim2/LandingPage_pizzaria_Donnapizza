@@ -17,6 +17,8 @@
     --cinza-claro: #AAAAAA;
     --mostarda: #F1A208;
     --fundo-terciario: #2A2A2A;
+    --cinza-medio: #666666;
+    --cinza-escuro: #444444;
 }
 
 * {
@@ -211,7 +213,7 @@ main {
   }
   
   body.dark .container {
-    background-color: #000000;
+    background-color: var(--cinza-medio);
     color: var(--darkverde);
   }
 

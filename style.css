@@ -9,8 +9,6 @@
     --darkverde: rgb(0,44,42);
     --verde: rgb(0,161,78);
     --vermelho: rgb(231,27,36);
-    --lightvermelho: rgb(218, 51, 59);
-    --darkvermelho: rgb(138, 26, 32);
     --amarelo: rgb(241,192,5);
 
     --fundo: #0D0D0D;
@@ -19,6 +17,8 @@
     --cinza-claro: #AAAAAA;
     --mostarda: #F1A208;
     --fundo-terciario: #2A2A2A;
+    --cinza-medio: #666666;
+    --cinza-escuro: #444444;
 }
 
 * {
@@ -36,7 +36,7 @@ body {
 }
 
 body.dark {
-    background-color: black;
+    background-color: var(--fundo-terciario);
 }
 
 #container { /*ajuste de todo a disposição do conteudo no copor*/
