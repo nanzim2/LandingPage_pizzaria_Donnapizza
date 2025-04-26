@@ -35,7 +35,7 @@ body {
     background-color: var(--branco-sutil);
     overflow-x: hidden;
 }
-
+/* pagina dark*/
 body.dark {
     background-color: var(--fundo-terciario);
 }
@@ -139,7 +139,7 @@ header .menu .pecaagora:hover {
     transition: 0.2s;
 }
 
-
+/*butão do dark acessibilidade*/
 header .DL { /*Inicio Acessibilidade modo D e L*/
     justify-self: end;
     margin-right: 5vh;
@@ -341,11 +341,11 @@ body.dark #article-2 {
     width: 100vw;
     height: 27rem;
 }
-
+/* cor da fonte de contato*/
 body.dark #article-3 {
     color: var(--branco-sutil);
 }
-
+/*fim da  cor fonte de contato*/
 #article-3 #contato-esquerda {
     width: 55%;
     margin-top: 4rem;
@@ -415,7 +415,7 @@ body.dark #article-3 {
     border-radius: 30px;
     background-color: var(--cinza-claro);
 }
-
+/* caixa dark do mapa endereço*/
 body.dark #article-4 .caixa-mapa {
     background-color: var(--darkverde);
 }
@@ -426,8 +426,9 @@ body.dark #article-4 .caixa-mapa {
     letter-spacing: 0.8px;
     margin-bottom: 1.5rem;
 }
+/*cor acessível dark do texo*/
 
-body.dark #article-4 .caixa-mapa h2 {
+    body.dark #article-4 .caixa-mapa h2 {
     color: var(--verde);
 }
 
@@ -578,7 +579,11 @@ footer .rodape p {
         width: 100%;
     }
     
-    #article-3 #contato-direita img {
+    
+    #article-3 #contato-direita img{
+        max-width: 100%;
+    }
+    #article-3 #contato-direita img{
         max-width: 100%;
     }
 
