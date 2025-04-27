@@ -38,9 +38,8 @@ body {
   "footer";
   grid-column: 100vw;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
-    
-
 
 body.dark {
   background-color: #2c2a2a;
