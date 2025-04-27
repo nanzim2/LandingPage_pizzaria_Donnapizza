@@ -1,5 +1,3 @@
-
-
 const modo = document.getElementById('botao-tema') //Modo dark
 
 modo.addEventListener('change', () => {
