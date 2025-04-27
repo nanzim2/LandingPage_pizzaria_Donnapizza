@@ -333,7 +333,6 @@ input, textarea {
 .duplo input {
   flex: 1;  /* Garante que os inputs ocupem o mesmo espaço */
 }
-
 button[type="submit"] {
   background-color: #d62828;
   color: white;

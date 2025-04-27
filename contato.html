@@ -79,7 +79,8 @@
               <input type="text" id="assunto" placeholder="Assunto" required>
               <input type="text" id="pedido" placeholder="Nº do Pedido (5 dígitos)" pattern="\d{5}" maxlength="5" title="Digite 5 números">
             </div>
-            <textarea id="mensagem" rows="4" placeholder="Escreva sua mensagem" maxlength="300" required></textarea>
+            <textarea id="mensagem" rows="4" placeholder="Escreva sua mensagem" maxlength="192" required></textarea>
+            <small id="contador">0/192</small>
             <button type="submit">ENVIAR MENSAGEM</button>
           </form>
         </section>
