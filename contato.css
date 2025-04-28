@@ -200,16 +200,15 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;}
-
+}
 .caixa-branca {
   grid-area: main;
   display: flex;
-
   justify-content: center;
   background: var(--cinza-claro);
   width: 100vw;
+  padding: 2rem;
+  padding: 2rem;
 }
 
 body.dark .caixa-branca {
@@ -303,6 +302,10 @@ body.dark .caixa-branca .content {
   margin-top: 20px;
 }
 
+body.dark .formulario input {
+  background-color: var(--branco-sutil);
+}
+
 .formulario h2 {
   text-align: center;
   font-size: 16px;
@@ -322,6 +325,11 @@ input, textarea {
   font-size: 14px;
   width: 100%;
   box-sizing: border-box;
+  resize: none;
+}
+
+body.dark textarea {
+  background-color: var(--branco-sutil);
 }
 
 .duplo {
