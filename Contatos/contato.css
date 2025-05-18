@@ -1,35 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap');
-/*
-  font-family: "Roboto", sans-serif;
-  font-family: "Rock Salt", cursive;
-  font-family: "Pacifico", cursive;
-*/
-
-:root {
-    --darkverde: rgb(0,44,42);
-    --verde: rgb(0,161,78);
-    --vermelho: rgb(231,27,36);
-    --lightvermelho: rgb(218, 51, 59);
-    --darkvermelho: rgb(138, 26, 32);
-    --amarelo: rgb(241,192,5);
-
-    --fundo: #0D0D0D;
-    --fundo-secundario: #1A1A1A;
-    --branco-sutil: #E5E5E5;
-    --cinza-claro: #AAAAAA;
-    --mostarda: #F1A208;
-    --fundo-terciario: #2A2A2A;
-    --cinza-medio: #666666;
-    --cinza-escuro: #444444;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
 body {
   display: grid;
   grid-template-areas: 

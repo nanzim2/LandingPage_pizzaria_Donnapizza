@@ -13,19 +13,6 @@ document.getElementById('feedbackForm').addEventListener('submit', function(e) {
     window.open(url, '_blank');
   });
 
-const modo = document.getElementById('botao-tema') //modo claro e escuro
-
-  modo.addEventListener('change', () => {
-    document.body.classList.toggle('dark')
-})
-
-  const hamburger = document.querySelector('.hamburger'); // NAV-BAR
-  const nav = document.querySelector('.nav');
-
-  hamburger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-});
-
 const textarea = document.getElementById('mensagem'); //Inicio contador
 const contador = document.getElementById('contador');
 
