@@ -178,7 +178,6 @@ body.dark article h1 {
     color: var(--branco-sutil);
 }
 
-
 main {
     grid-area: main;
     color: var(--darkverde);
@@ -187,6 +186,16 @@ main {
 
 body.dark main {
     background-color: var(--fundo-terciario);
+}
+
+/* ESTRUTURA */
+main #contentpizza {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    margin-bottom: 2.5rem;
+    max-width: 90vw;
+    margin-left: 2vw;
 }
 
 main .caixa-cardapio {
@@ -202,11 +211,41 @@ body.dark main .caixa-cardapio {
     background-color: var(--cinza-claro);
 }
 
-main .caixatipo {
+main .caixatipo, main .caixatipo-bordas { /* ESTRUTURA CAIXA TIPO + BORDAS*/
     display: grid;
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     gap: 2rem;
+}
+
+main .caixatipo .tipo h1 {
+    justify-self: center;
+    font-size: 180%;
+    font-weight: 370;
+    
+    background-color: var(--verde);
+    padding: 1rem;
+    border-radius: 45px;
+}
+
+main .caixatipo .quantidade {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+main .caixatipo .quantidade h2, main .caixatipo-bordas .descricao h2 {
+    font-size: 110%;
+    font-weight: 300;
+}
+
+main #contentpizza #caixapizza {
+    margin-bottom: 1.5rem;
+}
+
+main #contentpizza #caixapizza .caixatexto h4 {
+    font-size: larger;
+    font-weight: bold;
 }
 
 main .caixatipo-bordas {
@@ -214,7 +253,7 @@ main .caixatipo-bordas {
     grid-template-rows: 1fr;
     justify-content: center;
     margin-top: 4rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
 }
 
 main .caixatipo .tipo {
@@ -234,51 +273,9 @@ main .caixatipo-bordas .tipobordas h1 {
     border-radius: 45px;
 }
 
-
-main .caixatipo .tipo h1 {
-    justify-self: center;
-    font-size: 180%;
-    font-weight: 370;
-
-    background-color: var(--verde);
-    padding: 1rem;
-    border-radius: 45px;
-}
-
-main .caixatipo .quantidade {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-}
-
-main .caixatipo .quantidade h2 {
+main .caixatipo-bordas .descricao {
     font-size: 110%;
     font-weight: 300;
-}
-
-main #contentpizza {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-    margin-bottom: 2.5rem;
-    max-width: 90vw;
-    
-    margin-left: 2vw;
-}
-
-main #contentpizza #caixapizza {
-    margin-bottom: 1.5rem;
-}
-
-main #contentpizza #caixapizza .caixatexto h4 {
-    font-size: larger;
-    font-weight: bold;
-}
-
-.imgpizza {
-        width: 50%;
-        height: 50%;
-        border-radius: 10px;
 }
 
 footer {

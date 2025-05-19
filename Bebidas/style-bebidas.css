@@ -209,6 +209,10 @@ body.dark #containerbebidas {
    align-items: center;
 }
 
+#bebidas p { /*PREÇOS*/
+    display: none;
+}
+
 
 #bebidas :last-child {
     border-bottom: none;
