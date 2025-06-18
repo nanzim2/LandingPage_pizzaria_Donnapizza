@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="global/global_style.css">
     <link rel="stylesheet" href="style.css">
     <script src="global/global_script.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Home - Dona Pizza</title>
 </head>
 
@@ -21,12 +22,12 @@
 
                 <button class="hamburger" aria-label="Menu">&#9776;</button>
 
-                        <nav class="nav">
-                            <div class="cardapio"><a href="Cardapio/CARDAPIO.html">CARDÁPIO</a></div>
-                            <div class="bebidas"><a href="Bebidas/BEBIDAS.HTML">BEBIDAS</a></div>
-                            <div class="contatos"><a href="Contatos/contato.html">CONTATOS</a></div>
-                            <div class="endereco"><a href="Endereço/endereco.html">ENDEREÇO</a></div>
-                        </nav>
+                    <nav class="nav">
+                        <div class="home"><a href="index.html">HOME</a></div>
+                        <div class="cardapio"><a href="Cardapio/CARDAPIO.html">CARDÁPIO</a></div>
+                        <div class="bebidas"><a href="Bebidas/BEBIDAS.HTML">BEBIDAS</a></div>
+                        <div class="contato"><a href="Contatos/contato.html">CONTATO</a></div>
+                    </nav>
                         
                 <div class="pecaagora"><a href="https://shop.beetech.com.br/donapizza/">PEÇA AGORA</a></div>
             </div>
@@ -44,7 +45,8 @@
 
         <main>
             <div class="citacao">
-                <h1>"Sobor que conquista <br> a cada fatia"</h1>
+                <!--<h1>"Sobor que conquista <br> a cada fatia"</h1>-->
+                <h1>"A cada fatia, <br> um motivo a mais para sorrir!"</h1>
                 <h2>Donapizza</h2>
             </div>
         </main>
@@ -76,24 +78,24 @@
 
             <div class="caixa-reco">
                 <div class="caixa-suges">
-                    <img src="imagens/PIZZA3.png" alt="Calabria Premium">
-                    <h4>Calabria Premium</h4>
+                    <img src="imagens/Recomendações-pizzas/Pizza-peperoni.png" alt="Peperoni">
+                    <h4>Peperoni</h4>
                     <p>Nossas pizzas são preparadas com ingredientes de alta qualidade. Visando superar a expectativa do consumidor e trazer cada vez mais sabores premiuns ao cliente.</p>
                 </div>
                 <div class="caixa-suges">
-                    <img src="imagens/PIZZA1.png" alt="Frango com Catupiry">
+                    <img src="imagens/Recomendações-pizzas/Pizza-frango2.png" alt="Frango com Catupiry">
                     <h4>Frango com Catupiry</h4>
                     <p>Uma combinação que nunca sai de moda. O frango e o catupiry, em sua melhor versão, trazem o equilíbrio perfeito entre sabor e qualidade.</p>
                 </div>
                 <div class="caixa-suges">
-                    <img src="imagens/PIZZA2.png" alt="Calabresa">
-                    <h4>Calabresa</h4>
+                    <img src="imagens/Recomendações-pizzas/Pizza-calabresa2.png" alt="Calabresa com catupiry">
+                    <h4>Calabresa com Catupiry</h4>
                     <p>O clássico é atemporal. Nossas pizzas tradicionais mantém a essencia da tradição, porém melhorando cada vez mais sua qualidade. </p>
                 </div>
             </div>
 
             <div class="art-botao">
-                <a href="CARDAPIO.html">CARDÁPIO</a>
+                <a href="Cardapio/CARDAPIO.html">CARDÁPIO</a>
             </div>
         </article>
 
@@ -123,7 +125,20 @@
                 </div>
             </div>
             <div id="contato-direita">
-                <img src="Cardapio/img_cardapios/bg-lightcardapio.jpg" alt="pizza">
+
+<div class="carrossel">
+    <div class="carrossel-container">
+        <div class="carrossel-imagens">
+        <img src="imagens/carrossel/Tomate-seco.jpg" alt="Calabresa com catupiry">
+        <img src="imagens/carrossel/Calabresa-catupiry.jpg" alt="Marguerita">
+        <img src="imagens/carrossel/Marguerita.jpg" alt="Tomete seco ">
+        </div>
+    </div>
+
+  <button id="prevBtn" class="carrossel-btn">‹</button>
+  <button id="nextBtn" class="carrossel-btn">›</button>
+</div>
+                <!--<img src="Cardapio/img_cardapios/bg-lightcardapio.jpg" alt="pizza">-->
             </div>
         </article>
 
@@ -139,11 +154,17 @@
         <footer>
             <div class="rodape">
                 <img src="imagens/LOGO.png" alt="Donnapizzaz">
-                <p>© 2025 Pizzaria Donna Pizza.</p>
-                <p>Todos os direitos reservados</p>
+                <p>© Donna Pizza 2025</p>
+                <p>Todos os direitos reservados.</p>
             </div>
         </footer>
     </div>
+    <!--BOTAO FLUTUANTE-->
+    <div class="container-flutuante">
+        <a class="botao-delivery" href="https://shop.beetech.com.br/donapizza/" target="_blank">
+            <img src="imagens/icons8-pizza-96.png" alt="Delivery" width="80px">
+        </a>
+    </div>
 </body>
-<script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script> <!--https://remixicon.com-->
 </html>

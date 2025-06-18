@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../global/global_style.css">
     <link rel="stylesheet" href="style-cardapio.css">
     <script src="../global/global_script.js" defer></script>
+    <script src="script-cardapio.js" defer></script>
     <title>Cardápio - Dona Pizza</title>
 </head>
 <body>
@@ -21,12 +22,13 @@
 
                 <button class="hamburger" aria-label="Menu">&#9776;</button>
 
-                        <nav class="nav">
-                            <div class="cardapio"><a href="CARDAPIO.html">CARDÁPIO</a></div>
-                            <div class="bebidas"><a href="../Bebidas/BEBIDAS.HTML">BEBIDAS</a></div>
-                            <div class="contatos"><a href="../Contatos/contato.html">CONTATOS</a></div>
-                            <div class="endereco"><a href="../Endereço/endereco.html">ENDEREÇO</a></div>
-                        </nav>
+                    <nav class="nav">
+                        <div class="home"><a href="../index.html">HOME</a></div>
+                        <div class="cardapio"><a href="#">CARDÁPIO</a></div>
+                        <div class="bebidas"><a href="../Bebidas/BEBIDAS.HTML">BEBIDAS</a></div>
+                        <div class="contato"><a href="../Contatos/contato.html">CONTATO</a></div>
+                    </nav>
+                        
                 <div class="pecaagora"><a href="https://shop.beetech.com.br/donapizza/">PEÇA AGORA</a></div>
             </div>
 
@@ -51,7 +53,7 @@
             <div class="caixa-cardapio">
                 <div class="caixatipo">
                     <div class="tipo">
-                        <h1>TRADICIONAIS</h1>
+                        <h1><summary> TRADICIONAIS </summary></h1>
                     </div>
                     <div class="quantidade">
                         <h2>Média | 06 fatias</h2>
@@ -59,6 +61,8 @@
                         <h2>Família | 12 fatias</h2>
                     </div>
                 </div>
+                <details> <!--abertura detalhes sabores das tradicionais--> 
+                <summary class="detalhes">Clique para ver os sabores</summary>
                 <div id="contentpizza"> <!--DIV DE ABERTURA PIZZAS-->
                     <div class="alhofrito" id="caixapizza">
                         <div class="caixatexto">
@@ -253,7 +257,7 @@
                         </div>
                     </div> 
                         </div> <!--DIV FECHAMENTO PIZZATRADICIONAIS-->
-                
+                    </details> <!--fechamento detalhes sabores das tradicionais--> 
                     <div class="caixatipo">
                         <div class="tipo">
                             <h1>ESPECIAIS</h1>
@@ -264,6 +268,8 @@
                             <h2>Família | 12 fatias</h2>
                         </div>
                     </div>
+                    <details> <!--abertura detalhes sabores especiais-->
+                    <summary class="detalhes">Clique para ver os sabores</summary>
                     <div id="contentpizza">
                         <div class="calabriapremium" id="caixapizza">
 
@@ -363,6 +369,7 @@
                             </div>
                         </div>
                     </div><!--DIV FECHAMENTO PIZZASESPECIAIS-->
+                    </details><!--fechamento detalhes sabores especiais-->
                     <div class="caixatipo">
                         <div class="tipo">
                             <h1>DOCES</h1>
@@ -373,6 +380,8 @@
                             <h2>Família | 12 fatias</h2>
                         </div>
                     </div>
+                    <details> <!--abertura detalhes sabores doces-->
+                    <summary class="detalhes">Clique para ver os sabores</summary>
                     <div id="contentpizza">
                         <div class="Bananela" id="caixapizza">
                             <div class="caixatexto">
@@ -408,7 +417,7 @@
                             </div>
                         </div>
                     </div><!--DIV FECHAMENTO PIZZASDOCES-->
-
+                    </details> <!--fechamento detalhes sabores doces-->
                     <div class="caixatipo-bordas"> <!-- INICIO BORDAS-->
                         <div class="tipobordas">
                             <h1>BORDAS</h1>
@@ -417,6 +426,8 @@
                             <h2>Bordas Adicionais Personalizadas</h2>
                         </div>
                     </div>
+                    <details> <!--abertura detalhes tipos bordas-->
+                    <summary class="detalhes">Clique para ver os sabores</summary>
                     <div id="contentpizza" class="contentbordas">
                         <!-- <div class="massaintegral" id="caixapizza">
                             <div class="caixatexto">
@@ -460,16 +471,24 @@
                                 </div>
                             </div>
                     </div> <!-- FIM BORDAS-->
+                    </details> <!--fechamento detalhes tipos bordas-->
             </div>
         </main>
 
         <footer>
             <div class="rodape">
                 <img src="../imagens/LOGO.png" alt="Donnapizzaz">
-                <p>© 2025 Pizzaria Donna Pizza.</p>
-                <p>Todos os direitos reservados</p>
+                <p>© Donna Pizza 2025</p>
+                <p>Todos os direitos reservados.</p>
             </div>
         </footer>
+
+    <!--BOTAO FLUTUANTE-->
+    <div class="container-flutuante">
+        <a class="botao-delivery" href="https://shop.beetech.com.br/donapizza/" target="_blank">
+            <img src="../imagens/icons8-pizza-96.png" alt="Delivery" width="80px">
+        </a>
+    </div>
 </body>
     <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 </html>

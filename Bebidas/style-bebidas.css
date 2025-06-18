@@ -54,6 +54,11 @@ header .logo img:hover {
     color: white;
     text-decoration: none;
 }
+
+.nav .home a {
+    padding-bottom: 0.1rem;
+    border-bottom: 0.15rem solid white;
+}
   
   .hamburger {
     display: none;

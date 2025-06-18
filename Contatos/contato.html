@@ -9,7 +9,7 @@
   <script src="contatos.js" defer></script>
   <title>Contato - Dona Pizza</title>
 </head>
-<body>
+<body class="pagina-contato">
   <div id="container">
 
     <header>
@@ -22,10 +22,10 @@
           <button class="hamburger" aria-label="Menu">&#9776;</button>
 
           <nav class="nav">
+              <div class="home"><a href="../index.html">HOME</a></div>
               <div class="cardapio"><a href="../Cardapio/CARDAPIO.html">CARDÁPIO</a></div>
               <div class="bebidas"><a href="../Bebidas/BEBIDAS.HTML">BEBIDAS</a></div>
-              <div class="contatos"><a href="../Contatos/contato.html">CONTATOS</a></div>
-              <div class="endereco"><a href="../Endereço/endereco.html">ENDEREÇO</a></div>
+              <div class="contato"><a href="#">CONTATO</a></div>
           </nav>
                   
           <div class="pecaagora"><a href="https://shop.beetech.com.br/donapizza/">PEÇA AGORA</a></div>
@@ -61,7 +61,7 @@
             </a>
             <div class="telefone-item" title="Telefones">
               <img src="../imagens/phone-fill.svg" alt="Telefone" class="icone-social">
-              <span>(71) 98748-3645<br>(71) 3023-0596<br>(71) 3561-8856</span>
+              <div>(71) 98748-3645<br>(71) 3023-0596<br>(71) 3561-8856</div>
             </div>
           </div>
         </section>
@@ -91,12 +91,17 @@
     <footer>
       <div class="rodape">
           <img src="../imagens/LOGO.png" alt="Donnapizzaz">
-          <p>© 2025 Pizzaria Donna Pizza.</p>
-          <p>Todos os direitos reservados</p>
+          <p>© Donna Pizza 2025</p>
+          <p>Todos os direitos reservados.</p>
       </div>
     </footer>
-
   </div>
-
+      <!--BOTAO FLUTUANTE-->
+    <div class="zap-flutuante">
+        <a class="botao-zap" href="https://wa.me/5571987483645" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Delivery" width="80px">
+        </a>
+    </div>
+  </div>
 </body>
 </html>

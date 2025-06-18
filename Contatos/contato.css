@@ -57,6 +57,11 @@ header .logo img:hover {
   text-decoration: none;
 }
 
+.nav .home a {
+    padding-bottom: 0.1rem;
+    border-bottom: 0.15rem solid white;
+}
+
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -317,6 +322,11 @@ button[type="submit"] {
   border-radius: 6px;
   cursor: pointer;
 }
+
+button[type="submit"]:hover {
+  background-color: var(--verde);
+}
+
 iframe {
   width: 60vw;
   height: 50vh;
@@ -350,6 +360,34 @@ footer .rodape img {
 footer .rodape p {
   line-height: 1.5;
   font-size: 13px;
+}
+
+/*ZAP FLUTUANTE*/
+.zap-flutuante {
+    position: fixed;
+    bottom: 250px;
+    right: 20px;
+    width: 120px;
+    height: 120px;
+    z-index: 1000;
+}
+
+.botao-zap {
+    position: absolute;
+    bottom: 0;
+    right: -40px;
+    
+    background-color: var(--darkverde);
+    padding: 0.8rem;
+    border-radius: 100px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+    transition: right 0.2s, transform 0.2s;
+}
+
+.zap-flutuante:hover .botao-zap {
+  right: -10px;
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -405,9 +443,25 @@ footer .rodape p {
     flex-direction: column; /* Para telas menores, os inputs ficam em coluna */
   }
 
+  .telefone-item img {
+    margin-left: 1.7rem;
+  }
+
   .telefone-item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2px;
+    gap: 1rem;
+  }
+  /*ZAP FLUTUANTE*/
+  .zap-flutuante {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    width: 120px;
+    height: 120px;
+    z-index: 1000;
+}
+
+  .botao-zap {
+    bottom: 20px;
+    right: -60px;
   }
 }

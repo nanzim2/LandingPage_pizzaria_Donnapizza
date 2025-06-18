@@ -49,8 +49,13 @@ header .logo img:hover {
     color: white;
     text-decoration: none;
 }
+
+.nav .home a {
+    padding-bottom: 0.1rem;
+    border-bottom: 0.15rem solid white;
+}
   
-  .hamburger {
+.hamburger {
     display: none;
     font-size: 2rem;
     background: none;
@@ -239,6 +244,18 @@ main .caixatipo .quantidade h2, main .caixatipo-bordas .descricao h2 {
     font-weight: 300;
 }
 
+main #contentpizza {
+    padding: 0 1rem 0 1rem;
+    padding-top: 1rem;
+    border: 1px solid var(--darkverde);
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+    border-top: 0px;
+}
+
+body.dark main #contentpizza {
+    background-color: rgb( 215, 215, 215);
+}
 main #contentpizza #caixapizza {
     margin-bottom: 1.5rem;
 }
@@ -248,11 +265,15 @@ main #contentpizza #caixapizza .caixatexto h4 {
     font-weight: bold;
 }
 
+main .caixatipo {
+    margin-top: 2.5rem;
+}
+
 main .caixatipo-bordas {
     display: grid;
     grid-template-rows: 1fr;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 2.5rem;
     margin-bottom: 2.5rem;
 }
 
@@ -278,6 +299,45 @@ main .caixatipo-bordas .descricao {
     font-weight: 300;
 }
 
+.detalhes {
+    width: 97%;
+    justify-self: center;
+    border-radius: 12px;
+    padding: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative; /* Essencial para o ícone */
+    background-color: white;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+
+    transition: background-color 0.2s ease-in-out;
+}
+
+body.dark .detalhes {
+    background-color: rgb(225, 225, 225);
+}
+
+.detalhes:hover {
+    background-color: #e9e9e9;
+}
+
+.detalhes::after {
+    content: '+';
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    font-size: 1.5rem;
+    
+    /* Posição e rotação ÍCONE */
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Quando o <details> estiver aberto, mude o ícone */
+details[open] > .detalhes::after {
+    /* Gira o ícone em 45 graus para formar um 'x' */
+    transform: translateY(-50%) rotate(47deg); 
+}
 footer {
     grid-area: footer;
     color: white;
@@ -360,7 +420,7 @@ footer .rodape p {
 
     main #contentpizza {
         display: grid;
-        grid-template-columns: 90vw;
+        grid-template-columns: 80vw;
         justify-content: center;
         column-gap: 2rem;
     }
